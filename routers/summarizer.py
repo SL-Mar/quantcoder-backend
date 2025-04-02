@@ -1,12 +1,12 @@
 from fastapi import APIRouter, HTTPException, UploadFile, File, Depends, Query
 from fastapi.responses import FileResponse
-from backend.workflows.summarization_workflow import summarization_workflow
-from backend.models.summarymodel import SummaryResponse
-from backend.utils.file_utils import save_uploaded_file, save_file, delete_file, list_summaries
-from backend.core.logger_config import logger
-from backend.core.llm_cost import LLMCost
-from backend.core.config import settings
-from backend.utils.auth_utils import get_current_user
+from workflows.summarization_workflow import summarization_workflow
+from models.summarymodel import SummaryResponse
+from utils.file_utils import save_uploaded_file, save_file, delete_file, list_summaries
+from core.logger_config import logger
+from core.llm_cost import LLMCost
+from core.config import settings
+from utils.auth_utils import get_current_user
 
 import os
 

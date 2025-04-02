@@ -13,6 +13,9 @@ __pycache__/
 *.tmp
 *.temp
 
+# Test files
+test.*
+
 # Authentification logic in absence of server config
 auth.py
 auth_utils.py
@@ -23,4 +26,7 @@ auth_utils.py
 
 # Working Directory
 user_workdir/
+
+# Chroma database
+db/
 

@@ -14,8 +14,11 @@
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware  # clearly import this
-from backend.routers.summarizer import router
-from backend.routers import auth
+from routers.summarizer import router
+from routers.fundamentals import router as fundamentals_router
+
+
+from routers import auth
 
 app = FastAPI(title="QuantCoder API")
 
@@ -29,6 +32,7 @@ app.add_middleware(
 
 app.include_router(auth.router)
 app.include_router(router, prefix="/summarizer")
+app.include_router(fundamentals_router,prefix="/fundamentals")
 
 if __name__ == "__main__":
     import uvicorn

@@ -1,10 +1,10 @@
 from crewai import Crew, Task, Process
 from langchain_openai import ChatOpenAI
-from backend.models.summarymodel import SummaryResponse  # Assumed Pydantic model for output
-from backend.core.config import settings
+from models.summarymodel import SummaryResponse  # Assumed Pydantic model for output
+from core.config import settings
 
 # Import agents defined in agents.py
-from backend.agents.summarization_agents import insights_extraction_agent, summary_synthesis_agent, refinement_agent
+from agents.summarization_agents import insights_extraction_agent, summary_synthesis_agent, refinement_agent
 
 # Initialize the manager LLM with a low temperature for consistency.
 manager_llm = ChatOpenAI(

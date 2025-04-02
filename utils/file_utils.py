@@ -1,6 +1,6 @@
 import os
 from fastapi import UploadFile
-from backend.core.config import settings
+from core.config import settings
 
 # Base directory where all files are stored
 USER_WORKDIR = settings.USER_WORKDIR

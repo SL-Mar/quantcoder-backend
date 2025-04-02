@@ -9,8 +9,11 @@ class Settings(BaseSettings):
     serper_api_key: Optional[str] = None
     mistral_api_key: Optional[str] = None
 
-    # 👇 Add this for consistent project-wide file I/O
-    USER_WORKDIR: str = os.path.join(os.getcwd(), "user_workdir")
+    # Allow override via .env, fallback to ../../user_workdir
+    USER_WORKDIR: str = os.getenv(
+        "USER_WORKDIR",
+        os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "user_workdir"))
+    )
 
     model_config = SettingsConfigDict(
         env_file=".env",
@@ -18,3 +21,7 @@ class Settings(BaseSettings):
     )
 
 settings = Settings()
+
+# ✅ Auto-create working directory if it doesn't exist
+os.makedirs(settings.USER_WORKDIR, exist_ok=True)
+print(f"✅ USER_WORKDIR set to: {settings.USER_WORKDIR}")
