@@ -30,3 +30,5 @@ user_workdir/
 # Chroma database
 db/
 
+# Unit tests
+test_api_routes.py
