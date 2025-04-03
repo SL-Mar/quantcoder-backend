@@ -1,7 +1,7 @@
 from fastapi import APIRouter, HTTPException, Depends
 from pydantic import BaseModel
 from utils.auth_utils import get_current_user
-from workflows.fundamental_workflow import fundamental_workflow
+from workflows.fundamental_workflow-v1 import fundamental_workflow
 from models.fundamental_models import UserQuery, Executive_Summary
 from core.logger_config import logger
 from core.llm_cost import LLMCost
