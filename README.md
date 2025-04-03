@@ -124,7 +124,7 @@ This repository is distributed under the **Apache License 2.0**. You are free to
 
 ## References and Development Log
 
-- [QuantCoder FS: Technical Documentation](https://medium.com/@sl_mar/quantcoder-fs-documentation-6fc79915e287)
+- [QuantCoder FS: Technical Documentation and Contribution guidelines](https://github.com/SL-Mar/quantcoder-documentation)
 - [QuantCoder FS: Development Log](https://medium.com/@sl_mar/quantcoder-fs-development-log-1b3b7e8c23de)
 - [Towards automating quantitative finance research](https://medium.com/ai-advances/towards-automating-quantitative-finance-research-c868a2a6477e)
 
@@ -132,13 +132,13 @@ This repository is distributed under the **Apache License 2.0**. You are free to
 
 ## Citation
 
-If this repository or its workflows contribute to your academic work, you are invited to cite it as:
+If this repository or its workflows contribute to your academic or institutional work, you are invited to cite it as:
 
 ```
 S.M.Laignel. (2025). QuantCoder FS: LLM-powered fundamental analysis and pair-coding for Quantitative Finance. GitHub Repository. https://github.com/SL-Mar/quantcoder-backend
 ```
 ---
 
-For issues or contributions, feel free to open a pull request or submit a GitHub issue. 
+
 
 
