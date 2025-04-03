@@ -125,7 +125,7 @@ This repository is distributed under the **Apache License 2.0**. You are free to
 ## References and Development Log
 
 - [QuantCoder FS: Technical Documentation and Contribution guidelines](https://github.com/SL-Mar/quantcoder-documentation)
-- [QuantCoder FS: Development Log](https://medium.com/@sl_mar/quantcoder-fs-development-log-1b3b7e8c23de)
+- [QuantCoder FS: Development Log](https://ai.gopubby.com/quantcoder-fs-development-log-1b3b7e8c23de)
 - [Towards automating quantitative finance research](https://medium.com/ai-advances/towards-automating-quantitative-finance-research-c868a2a6477e)
 
 ---
